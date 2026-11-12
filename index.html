@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7eee9">
+  <title>كل سنة وإنتِ طيبة يا ماما ❤️</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+    :root{--ink:#493c3c;--muted:#806f6b;--rose:#b87983;--rose2:#e8c9c6;--cream:#fbf6f1;--gold:#c4a16b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:"Cairo",Tahoma,Arial,sans-serif}
+    button{font:inherit}
+    .cover{min-height:100svh;display:grid;place-items:center;padding:28px 18px;position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(248,232,226,.48),rgba(251,245,237,.42)),url('assets/memory-1.jpeg') center 44%/cover no-repeat}
+    .cover:before,.cover:after{content:"";position:absolute;border:1px solid #d8b7ae66;border-radius:50%;width:420px;height:420px}
+    .cover:before{top:-230px;right:-150px}.cover:after{bottom:-280px;left:-130px;width:520px;height:520px}
+    .cover-card{position:relative;z-index:1;width:min(100%,520px);text-align:center;padding:42px 26px 36px;border:1px solid #fff9;border-radius:30px;background:#fff9;box-shadow:0 22px 70px #805d5420;backdrop-filter:blur(8px)}
+    .eyebrow{letter-spacing:2px;color:var(--rose);font-size:12px;font-weight:700}
+    .heart{font-size:38px;margin:12px 0}
+    h1{font-size:clamp(29px,7vw,43px);line-height:1.55;margin:8px 0;color:#684c50}
+    .cover p{color:var(--muted);margin:8px 0 26px}
+    .open-btn,.music-btn{border:0;border-radius:999px;background:linear-gradient(135deg,#b87983,#98636e);color:white;padding:13px 28px;box-shadow:0 9px 24px #9b687333;cursor:pointer;transition:.2s}
+    .open-btn:hover,.music-btn:hover{transform:translateY(-2px)}
+    .hint{font-size:12px!important;margin:16px 0 0!important;color:#9b8983!important}
+    main{display:none}
+    main.visible{display:block;animation:fade .8s ease}
+    @keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+    .hero{padding:76px 20px 52px;text-align:center;background:linear-gradient(180deg,#f5e5df,transparent)}
+    .hero .small{color:var(--rose);font-weight:700}
+    .hero h2{font-size:clamp(27px,6vw,42px);margin:8px auto;color:#684c50}
+    .hero p{color:var(--muted);margin:0}
+    .wrap{width:min(1050px,calc(100% - 32px));margin:auto}
+    .section{padding:34px 0 64px}
+    .section-title{text-align:center;margin-bottom:24px}
+    .section-title h3{font-size:26px;color:#684c50;margin:0 0 5px}
+    .section-title p{color:var(--muted);font-size:14px;margin:0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .photo{padding:0;border:0;background:#eadbd5;border-radius:18px;overflow:hidden;cursor:zoom-in;box-shadow:0 8px 24px #765b5018;position:relative}
+    .photo img{width:100%;height:310px;object-fit:cover;display:block;transition:transform .5s}
+    .photo:hover img{transform:scale(1.045)}
+    .photo:nth-child(2) img{object-position:center 35%}
+    .photo:nth-child(4) img{object-position:center 35%}
+    .photo:nth-child(5) img{object-position:center 30%}
+    .note{margin:4px auto 0;max-width:700px;padding:34px 25px;text-align:center;border-radius:24px;background:#fff;border:1px solid #f0e3df;box-shadow:0 12px 34px #765b500d}
+    .note .big-heart{font-size:27px}
+    .note h3{color:#684c50;font-size:25px;margin:7px 0 14px}
+    .note p{font-size:clamp(19px,4vw,24px);font-weight:700;line-height:1.9;margin:0;color:#79565d}
+    .footer{text-align:center;padding:25px 16px 42px;color:#9a8580;font-size:13px}
+    .music-control{position:fixed;bottom:18px;left:18px;z-index:5;display:none}
+    .music-control.show{display:block}
+    .music-btn{padding:10px 17px;font-size:13px}
+    .lightbox{display:none;position:fixed;inset:0;background:#1e1718eF;z-index:10;align-items:center;justify-content:center;padding:22px}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:min(94vw,900px);max-height:88svh;object-fit:contain;border-radius:12px;box-shadow:0 15px 60px #0008}
+    .close{position:absolute;top:16px;left:18px;color:white;background:#ffffff22;border:1px solid #ffffff55;border-radius:50%;width:42px;height:42px;font-size:24px;cursor:pointer}
+    @media(max-width:700px){.gallery{grid-template-columns:repeat(2,1fr);gap:10px}.photo img{height:240px}.hero{padding-top:58px}.cover-card{padding:34px 20px}}
+    @media(max-width:420px){.photo img{height:205px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <section class="cover" id="cover">
+    <div class="cover-card">
+      <div class="eyebrow">A LITTLE SURPRISE FOR YOU</div>
+      <div class="heart">🤍</div>
+      <h1>كل سنة وإنتِ طيبة<br>يا ماما</h1>
+      <p>أي خدمة، هديتك بتخصصي أهو، عشان متقوليش مش بعرف أعمل حاجة 😎❤️</p>
+      <button class="open-btn" id="openBtn">افتحي هديتك ✨</button>
+      
+    </div>
+  </section>
+
+  <main id="content">
+    <header class="hero">
+      <div class="small">يوم ميلاد سعيد يا أحلى ماما</div>
+      <h2>كل سنة وإنتِ طيبة يا ماما ❤️</h2>
+      <p>شوية صور وذكريات حلوة لينا سوا</p>
+    </header>
+
+    <section class="section wrap">
+      <div class="section-title">
+        <h3>ذكرياتنا 📸</h3>
+        <p>أحلى اللحظات بتبقى أحلى عشان إحنا فيها سوا</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <button class="photo" aria-label="عرض الصورة الأولى"><img src="assets/memory-1.jpeg" alt="ذكرى على البحر وقت الغروب"></button>
+        <button class="photo" aria-label="عرض الصورة الثانية"><img src="assets/memory-2.jpeg" alt="صورة لنا على الشاطئ"></button>
+        <button class="photo" aria-label="عرض الصورة الثالثة"><img src="assets/memory-3.jpeg" alt="صورة عائلية على البحر"></button>
+        <button class="photo" aria-label="عرض الصورة الرابعة"><img src="assets/memory-4.jpeg" alt="ذكرى جميلة في البيت"></button>
+        <button class="photo" aria-label="عرض الصورة الخامسة"><img src="assets/memory-5.jpeg" alt="صورة لنا في السيارة"></button>
+        <button class="photo" aria-label="عرض الصورة السادسة"><img src="assets/memory-6.jpeg" alt="ذكرى عائلية على الشاطئ"></button>
+      </div>
+    </section>
+
+    <section class="section wrap">
+      <div class="note">
+        <div class="big-heart">❤️</div>
+        <h3>منّي ليكي</h3>
+        <p>كل سنة وإنتِ طيبة يا ماما<br>مليش غيرك ❤️❤️</p>
+      </div>
+    </section>
+    <footer class="footer">بحبك يا ماما 🤍</footer>
+  </main>
+
+  <div class="music-control" id="musicControl">
+    <button class="music-btn" id="musicBtn">Ⅱ إيقاف الموسيقى</button>
+  </div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="عرض الصورة">
+    <button class="close" id="closeLightbox" aria-label="إغلاق">×</button>
+    <img id="lightboxImg" src="" alt="صورة من الذكريات">
+  </div>
+
+<script>
+  // A gentle, original piano-like melody generated locally with Web Audio.
+  let audioCtx, master, melodyTimer, noteIndex = 0, playing = false;
+  const melody = [
+    [392,523,659],[349,440,587],[330,392,523],[294,392,494],
+    [262,330,392],[294,370,440],[330,392,494],[392,494,587],
+    [349,440,523],[330,392,494],[294,370,440],[262,330,392]
+  ];
+  function pianoNote(freq, start, duration, volume){
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    const filter = audioCtx.createBiquadFilter();
+    osc.type = "sine";
+    osc.frequency.value = freq;
+    filter.type = "lowpass"; filter.frequency.value = 1900;
+    gain.gain.setValueAtTime(0.0001, start);
+    gain.gain.exponentialRampToValueAtTime(volume, start + 0.025);
+    gain.gain.exponentialRampToValueAtTime(0.0001, start + duration);
+    osc.connect(filter); filter.connect(gain); gain.connect(master);
+    osc.start(start); osc.stop(start + duration + 0.03);
+  }
+  function playBar(){
+    if(!playing) return;
+    const now = audioCtx.currentTime + 0.04;
+    const chord = melody[noteIndex % melody.length];
+    chord.forEach((f,i)=>pianoNote(f,now + i*0.012,2.3,0.018));
+    pianoNote(chord[0]/2,now,2.6,0.025);
+    noteIndex++;
+  }
+  function startMusic(){
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if(!AudioContext) return;
+    if(!audioCtx){audioCtx=new AudioContext();master=audioCtx.createGain();master.gain.value=0.7;master.connect(audioCtx.destination);}
+    audioCtx.resume();
+    playing=true; playBar();
+    melodyTimer=setInterval(playBar,2100);
+    document.getElementById("musicBtn").textContent="Ⅱ إيقاف الموسيقى";
+  }
+  function stopMusic(){
+    playing=false; clearInterval(melodyTimer);
+    if(master) master.gain.setTargetAtTime(0.0001,audioCtx.currentTime,0.08);
+    document.getElementById("musicBtn").textContent="▶ تشغيل الموسيقى";
+  }
+  document.getElementById("openBtn").addEventListener("click",()=>{
+    document.getElementById("cover").style.display="none";
+    document.getElementById("content").classList.add("visible");
+    document.getElementById("musicControl").classList.add("show");
+    startMusic();
+    window.scrollTo(0,0);
+  });
+  document.getElementById("musicBtn").addEventListener("click",()=>{
+    if(playing){stopMusic();}else{
+      if(master) master.gain.setTargetAtTime(0.7,audioCtx.currentTime,0.12);
+      startMusic();
+    }
+  });
+  document.querySelectorAll(".photo").forEach(btn=>btn.addEventListener("click",()=>{
+    const img=btn.querySelector("img");
+    document.getElementById("lightboxImg").src=img.src;
+    document.getElementById("lightbox").classList.add("open");
+  }));
+  function closeLightbox(){document.getElementById("lightbox").classList.remove("open");}
+  document.getElementById("closeLightbox").addEventListener("click",closeLightbox);
+  document.getElementById("lightbox").addEventListener("click",e=>{if(e.target.id==="lightbox")closeLightbox();});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeLightbox();});
+</script>
+</body>
+</html>
